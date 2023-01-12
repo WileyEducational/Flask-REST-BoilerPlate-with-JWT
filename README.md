@@ -1,10 +1,7 @@
-#### FLASK RESTX BOILER-PLATE WITH JWT
+#### FLASK RESTX BOILER-PLATE WITH JWT BUILD ON PYTHON 3.9
 
 ### Terminal commands
 Note: make sure you have `pip` and `virtualenv` installed.
-
-    Initial installation: make install
-
     To run test: flask test
 
     To run application: flask run
@@ -36,6 +33,6 @@ Make sure to run the initial migration commands to update the database (from the
     user by public_id requires just a regular authentication.
 
 
-### Based on : Full description and guide (beware guide is wrong in some places in newer python versions) ###
+### Based on : Full description and guide (beware guide this guide targets an older python version!) ###
 https://medium.freecodecamp.org/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563
 
