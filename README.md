@@ -5,29 +5,28 @@ Note: make sure you have `pip` and `virtualenv` installed.
 
     Initial installation: make install
 
-    To run test: make tests
+    To run test: flask test
 
-    To run application: make run
+    To run application: flask run
 
-    To run all commands at once : make all
 
-Make sure to run the initial migration commands to update the database.
+Make sure to run the initial migration commands to update the database (from the venv!).
+
+    > export FLASK_APP=manage.py
     
-    > python manage.py db init
+    > flask db init
 
-    > python manage.py db migrate --message 'initial database migration'
+    > flask db migrate
 
-    > python manage.py db upgrade
+    > flask db upgrade
 
 
 ### Viewing the app ###
-
     Open the following url on your browser to view swagger documentation
     http://127.0.0.1:5000/
 
 
-### Using Postman ####
-
+### Using Postman / Insomnia ####
     Authorization header is in the following format:
 
     Key: Authorization
@@ -36,13 +35,7 @@ Make sure to run the initial migration commands to update the database.
     For testing authorization, url for getting all user requires an admin token while url for getting a single
     user by public_id requires just a regular authentication.
 
-### Full description and guide ###
+
+### Based on : Full description and guide (beware guide is wrong in some places in newer python versions) ###
 https://medium.freecodecamp.org/structuring-a-flask-restplus-web-service-for-production-builds-c2ec676de563
 
-
-### Contributing
-If you want to contribute to this flask restplus boilerplate, clone the repository and just start making pull requests.
-
-```
-https://github.com/cosmic-byte/flask-restplus-boilerplate.git
-```
